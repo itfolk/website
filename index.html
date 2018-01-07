@@ -12,7 +12,12 @@
 
   </head>
   <body>
-
+    <a class="btn btn-default fixed-bottom text-right">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-commenting-o fa-stack-1x fa-inverse" aria-hidden="true"></i>
+      </span>
+    </a>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <a class="navbar-brand font-weight-bold" href="#">IT Fólk</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +30,7 @@
             <a class="nav-link" href="#verdskra">Verðskrá</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Um okkur</a>
+            <a class="nav-link" href="#about">Um okkur</a>
           </li>
         </ul>
           <button type="button" class="btn btn-secondary">Innskráning</button>
@@ -36,7 +41,7 @@
     <div class="container mb-5">
       <h1>Vantar þig hjálp frá IT Fólki?</h1>
       <p>
-        Aðeins 3000 kr. hverjar byrjaðar 20 mín. og ef við náum ekki að laga vandamálið rukkum við ekkert fyrir.
+        Ef við náum ekki að laga vandamálið rukkum við ekkert fyrir, annars aðeins 3000kr. fyrir hverjar byrjaðar 20 mín.
       </p>
       <p>
         Veldu flokk hér að neðan eða hringdu í 691-2226
@@ -81,7 +86,7 @@
       <div class="card">
           <h3 class="card-header bg-primary text-white" id="verdskra">Verðskrá</h3>
         <div class="card-body">
-          <table class="table">
+          <table class="table table-responsive">
             <thead class="bg-secondary text-white">
               <tr>
                 <th>#</th>
@@ -121,6 +126,12 @@
                 <td>40-60 mín.</td>
                 <td>6000-9000kr.</td>
               </tr>
+              <tr>
+                  <th scope="row">6</th>
+                  <td>Aðstoða við uppsettningu á nýrri tölvu, ásamt því að færa gögnin af þeirri gömlu</td>
+                  <td>40-90 mín.</td>
+                  <td>6000-12000kr.</td>
+                </tr>
             </tbody>
           </table>
           <div class="mb-2 alert alert-primary" role="alert">
@@ -130,15 +141,22 @@
       </div>
     </div>
 
-    <div class="navbar bg-secondary text-white p-5">
-      <div class="container">
-        <div class="d-flex flex-wrap">
-          <div class="">
-            <h4 class="">Um okkur</h4>
-            <p>IT Fólk tengir þá sem kunna á tölvur við þá sem vantar aðstoð. Flest tækni vandamál er hægt að leysa í gegnum netið og þannig sparast tími og peningur sem færi annars í akstur, skoðunar gjöld og annað.</p>
+    <div class="navbar text-white bg-secondary p-5">
+      <div class="container-fluid d-flex">
+        <div class="d-flex">
+          <div class="col-lg-6">
+            <h3 class="" id="about">Um okkur</h3>
+            <p>IT Fólk tengir þá sem kunna á tölvur við þá sem vantar aðstoð. Flest tækni vandamál er hægt að leysa í gegnum netið og þannig sparast tími og peningur sem færi annars í akstur, skoðunargjöld og annað.</p>
           </div>
-          <div class="d-flex flex-row-reverse">
-            <h4 class="">Hlekkir</h4>
+          <div class="offset-lg-4">
+              <ul class="nav flex-column float-right">
+                <h3 class="">Hlekkir <i class="fa fa-link" aria-hidden="true"></i></h3>
+                <li class="nav-link"><a class="float-right text-white" href="#!">Facebook <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="nav-link"><a class="float-right text-white" href="#!">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="nav-link"><a class="float-right text-white" href="#!">LinkedIn <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li class="nav-link"><a class="float-right text-white" href="#!">Instagram <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li class="nav-link"><a class="float-right text-white" href="#!">Snapchat <i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a></li>
+              </ul>
           </div>
         </div> 
       </div>
