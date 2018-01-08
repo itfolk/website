@@ -12,12 +12,6 @@
 
   </head>
   <body>
-    <a class="btn btn-default fixed-bottom text-right">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-commenting-o fa-stack-1x fa-inverse" aria-hidden="true"></i>
-      </span>
-    </a>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <a class="navbar-brand font-weight-bold" href="#">IT Fólk</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +27,7 @@
             <a class="nav-link" href="#about">Um okkur</a>
           </li>
         </ul>
-          <button type="button" class="btn btn-secondary">Innskráning</button>
+          <button type="button" class="btn btn-secondary">Innskráning <i class="fa fa-sign-in fa-inverse" aria-hidden="true"></i></button>
       </div>
     </nav>
   
@@ -86,7 +80,7 @@
       <div class="card">
           <h3 class="card-header bg-primary text-white" id="verdskra">Verðskrá</h3>
         <div class="card-body">
-          <table class="table table-responsive">
+          <table class="table d-none d-sm-none d-md-block">
             <thead class="bg-secondary text-white">
               <tr>
                 <th>#</th>
@@ -143,19 +137,19 @@
 
     <div class="navbar text-white bg-secondary p-5">
       <div class="container-fluid d-flex">
-        <div class="d-flex">
-          <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-6 pb-5">
             <h3 class="" id="about">Um okkur</h3>
             <p>IT Fólk tengir þá sem kunna á tölvur við þá sem vantar aðstoð. Flest tækni vandamál er hægt að leysa í gegnum netið og þannig sparast tími og peningur sem færi annars í akstur, skoðunargjöld og annað.</p>
           </div>
           <div class="offset-lg-4">
               <ul class="nav flex-column float-right">
                 <h3 class="">Hlekkir <i class="fa fa-link" aria-hidden="true"></i></h3>
-                <li class="nav-link"><a class="float-right text-white" href="#!">Facebook <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li class="nav-link"><a class="float-right text-white" href="#!">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li class="nav-link"><a class="float-right text-white" href="#!">LinkedIn <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li class="nav-link"><a class="float-right text-white" href="#!">Instagram <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li class="nav-link"><a class="float-right text-white" href="#!">Snapchat <i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a></li>
+                <li><a class="nav-link float-right text-white" href="#!">Facebook <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a class="nav-link float-right text-white" href="#!">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a class="nav-link float-right text-white" href="#!">LinkedIn <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a class="nav-link float-right text-white" href="#!">Instagram <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a class="nav-link float-right text-white" href="#!">Snapchat <i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a></li>
               </ul>
           </div>
         </div> 
@@ -163,6 +157,11 @@
     </div>
   </div>
   
+  <div class="d-flex fixed-bottom justify-content-end m-2 mb-3">
+    <button class="btn btn-success rounded-circle" data-toggle="tooltip" data-placement="left" title="Spjallaðu við okkur og sjáðu hvort við getum hjálpað!">
+      <i class="fa fa-comments-o fa-inverse fa-4x " aria-hidden="true"></i>      
+    </button>
+  </div>
 
 
     <!-- Optional JavaScript -->
@@ -170,5 +169,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
