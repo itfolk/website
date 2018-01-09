@@ -26,19 +26,22 @@
           <li class="nav-item">
             <a class="nav-link" href="#about">Um okkur</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Um okkur</a>
+          </li>
         </ul>
           <button type="button" class="btn btn-secondary">Innskráning <i class="fa fa-sign-in fa-inverse" aria-hidden="true"></i></button>
       </div>
     </nav>
   
   <div class="d-flex flex-column mt-5">
-    <div class="container mb-5">
-      <h1>Vantar þig hjálp frá IT Fólki?</h1>
-      <p>
-        Ef við náum ekki að laga vandamálið rukkum við ekkert fyrir, annars aðeins 3000kr. fyrir hverjar byrjaðar 20 mín.
-      </p>
+    <div class="container">
+      <h1 class="mt-5 mb-5">Vantar þig hjálp frá IT Fólki?</h1>
       <p>
         Veldu flokk hér að neðan eða hringdu í 691-2226
+        </p>
+        <p>
+        Við erum líka með netspjall á <a href="#">síðunni <i class="fa fa-comments-o fa-lg" aria-hidden="true"></i></a> og á <a href="#">Facebook <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a> 
       </p>
       <div class="card-columns">
 
@@ -80,50 +83,55 @@
       <div class="card">
           <h3 class="card-header bg-primary text-white" id="verdskra">Verðskrá</h3>
         <div class="card-body">
-          <table class="table d-none d-sm-none d-md-block">
+          <div>
+            <p>Bara eitt verð! 3000kr. hverjar byrjaðar 20mín. og ef við náum ekki að laga vandamálið rukkum við ekki!</p>
+            <p>Ekkert akstursgjald, ekkert skoðunargjald og engin þörf á að skilja tækið eftir á verkstæði!</p>
+            <p>Hér fyrir neðan má sjá dæmi um hvað ýmis verk taka um það bil langan tíma og hvað væri rukkað fyrir</p>
+          </div>
+          <table class="table table-responsive">
             <thead class="bg-secondary text-white">
               <tr>
-                <th>#</th>
+                <th class="d-none d-sm-none d-md-table-cell">#</th>
                 <th>Verk</th>
-                <th>áætlaður tími</th>
+                <th class="d-none d-sm-none d-md-table-cell">áætlaður tími</th>
                 <th>áætlaður kostnaður</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
-                <td>Almenn skoðun á tæki og ráðgjöf</td>
-                <td>Minna en 20 mín.</td>
+                <th class="d-none d-sm-none d-md-table-cell" scope="row">1</th>
+                <td>Skoðun á tæki og ráðgjöf, vírus athugun og meira</td>
+                <td class="d-none d-sm-none d-md-table-cell">Minna en 20 mín.</td>
                 <td>3000 kr.</td>
               </tr>
               <tr>
-                <th scope="row">2</th>
+                <th class="d-none d-sm-none d-md-table-cell" scope="row">2</th>
                 <td>Vírushreinsun</td>
-                <td>20-40 mín.</td>
+                <td class="d-none d-sm-none d-md-table-cell">20-40 mín.</td>
                 <td>3000-6000kr.</td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th class="d-none d-sm-none d-md-table-cell" scope="row">3</th>
                 <td>Tengja tölvu við þráðlausan prentara</td>
-                <td>20 mín.</td>
+                <td class="d-none d-sm-none d-md-table-cell">20 mín.</td>
                 <td>3000kr.</td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th class="d-none d-sm-none d-md-table-cell" scope="row">3</th>
                 <td>Færa gögn af snjallsíma á tölvu</td>
-                <td>20-40 mín.</td>
+                <td class="d-none d-sm-none d-md-table-cell">20-40 mín.</td>
                 <td>3000-6000kr.</td>
               </tr>
               <tr>
-                <th scope="row">5</th>
+                <th class="d-none d-sm-none d-md-table-cell" scope="row">5</th>
                 <td>Strauja tölvu og gera tilbúna til sölu</td>
-                <td>40-60 mín.</td>
+                <td class="d-none d-sm-none d-md-table-cell">40-60 mín.</td>
                 <td>6000-9000kr.</td>
               </tr>
               <tr>
-                  <th scope="row">6</th>
-                  <td>Aðstoða við uppsettningu á nýrri tölvu, ásamt því að færa gögnin af þeirri gömlu</td>
-                  <td>40-90 mín.</td>
+                  <th class="d-none d-sm-none d-md-table-cell" scope="row">6</th>
+                  <td class="">Aðstoða við uppsettningu á nýrri tölvu, ásamt því að færa gögn á milli af gömlu tölvunni</td>
+                  <td class="d-none d-sm-none d-md-table-cell">40-90 mín.</td>
                   <td>6000-12000kr.</td>
                 </tr>
             </tbody>
@@ -157,8 +165,8 @@
     </div>
   </div>
   
-  <div class="d-flex fixed-bottom justify-content-end m-2 mb-3">
-    <button class="btn btn-success rounded-circle" data-toggle="tooltip" data-placement="left" title="Spjallaðu við okkur og sjáðu hvort við getum hjálpað!">
+  <div class="d-flex fixed-bottom justify-content-end m-2 mb-3 ">
+    <button class="btn btn-success rounded-circle chat" title="Tooltip title #1" popover-title="popover title #1"  popover-content="Spjallaðu við okkur og sjáðu hvort við getum hjálpað!">
       <i class="fa fa-comments-o fa-inverse fa-4x " aria-hidden="true"></i>      
     </button>
   </div>
@@ -170,9 +178,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script>
-      $(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-      });
+$('.chat').each(function() {
+  $(this).popover({    
+    content : $(this).attr("popover-content"),
+    title : $(this).attr("popover-title")         
+  })     
+})
+$( ".chat" ).tooltip({
+  track: true
+});
     </script>
   </body>
 </html>
